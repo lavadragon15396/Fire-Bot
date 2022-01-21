@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://discord.com/api/oauth2/authorize?client_id=933439292167028797&permissions=8&redirect_uri=https%3A%2F%2Fgithub.com%2Flavadaragon15396%2FFire-Bot&response_type=code&scope=bot%20applications.commands">
-    <img src="https://github.com/lavadaragon15396/Fire-Bot/blob/e88af9f38188e978e92be6d92596bb4331a16e22/Icons/icon%20glow.png?raw=true" width="72">
+    <img src="https://github.com/lavadaragon15396/Fire-Bot/blob/master/Icons/icon%2016x%20glow.png?raw=true" width="72">
   </a>
 </p>
 <!-- <style>
