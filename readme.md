@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://discord.com/api/oauth2/authorize?client_id=933439292167028797&permissions=8&redirect_uri=https%3A%2F%2Fgithub.com%2Flavadaragon15396%2FFire-Bot&response_type=code&scope=bot%20applications.commands">
+  <a href="https://discord.com/api/oauth2/authorize?client_id=946121908099907634&permissions=8&scope=bot%20applications.commands">
     <img src="https://github.com/lavadaragon15396/Fire-Bot/blob/master/Icons/icon%20glow.png?raw=true" width="72">
   </a>
 </p>
@@ -11,7 +11,7 @@
     }
 </style>
 <center>Fire Bot</center> -->
-<h1 align="center" ><a href="https://discord.com/api/oauth2/authorize?client_id=933439292167028797&permissions=8&redirect_uri=https%3A%2F%2Fgithub.com%2Flavadaragon15396%2FFire-Bot&response_type=code&scope=bot%20applications.commands">Fire Bot</h1>
+<h1 align="center" ><a href="https://discord.com/api/oauth2/authorize?client_id=946121908099907634&permissions=8&scope=bot%20applications.commands">Fire Bot</h1>
 
 
 ---
