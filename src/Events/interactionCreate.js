@@ -1,20 +1,34 @@
 module.exports = {
     name: 'interactionCreate',
     async execute(interaction, client) {
-        if (!interaction.isCommand()) return;
+        if (!interaction.isCommand()) {
+            const command = client.commands.get(interaction.commandName);
 
-        const command = client.commands.get(interaction.commandName);
+            if (!command) return;
 
-        if (!command) return;
-
-        try {
-            await command.execute(interaction);
-        } catch (error) {
-            console.error(error);
-            await interaction.reply({
-                content: 'There Was An Error While Executing This Command',
-                ephemeral: true
+            try {
+                await command.execute(interaction);
+            } catch (error) {
+                console.error(error);
+                await interaction.reply({
+                    content: 'There Was An Error While Executing This Command',
+                    ephemeral: true
+                });
+            }
+        } else if (interaction.isButton()) {
+            const button = client.buttons.get(interaction.customId);
+            if (!button) return await interaction.reply({
+                content: `This Button Does Not Exist`
             });
+            try {
+                await command.execute(interaction);
+            } catch (error) {
+                console.error(error);
+                await interaction.reply({
+                    content: 'There Was An Error While Executing This Command',
+                    ephemeral: true
+                });
+            }
         }
-    }
-}
+    },
+};
