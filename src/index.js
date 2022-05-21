@@ -1,3 +1,9 @@
+//TODO make user and server info commands combined
+//TODO make help command
+//TODO make work on multiple servers
+//TODO port all commands from old bot
+//TODO make music bot capabilities 
+
 const { Client, Intents, Collection } = require('discord.js');
 const fs = require('fs');
 const client = new Client({ intents: 32767 })
