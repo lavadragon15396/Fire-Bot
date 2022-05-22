@@ -21,7 +21,7 @@ async function start() {
                 .setTitle(json.title)
                 .setURL(json.postLink)
                 .setImage(json.url)
-                .setColor('FF8B00')
+                .setColor('f85056')
                 .setFooter({
                     text: `r/${json.subreddit} | OP : ${json.author} | ${json.ups} upvotes`,
                 })

@@ -10,11 +10,11 @@ module.exports = {
         const member = interaction.options.getMember('target');
         const noMemberMentioned = new MessageEmbed()
         .setTitle(`Please mention a member to shoot`)
-        .setColor('FF8B00')
+        .setColor('f85056')
         .setTimestamp()
         const shootEmbed = new MessageEmbed()
         .setTitle(`**▄︻̷̿┻̿═━一**         ᐨ     ${member.displayName}`)
-        .setColor('FF8B00')
+        .setColor('f85056')
         .setTimestamp()
         if (!member) {
             await interaction.reply({embeds: [noMemberMentioned]});

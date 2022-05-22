@@ -15,7 +15,7 @@ module.exports = {
         const avatarEmbed = new MessageEmbed()
         .setTitle (`${member.displayName}'s avatar`)
         .setImage (member.displayAvatarURL())
-        .setColor (`FF8B00`)
+        .setColor (`f85056`)
         .setTimestamp()
         if (!member) {
             await interaction.reply({embeds: [noMemberMentioned]});
