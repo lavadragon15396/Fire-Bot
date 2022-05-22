@@ -1,4 +1,4 @@
-//TODO make user and server info commands combined
+//TODO make button interaction create
 //TODO make help command
 //TODO make work on multiple servers
 //TODO port all commands from old bot

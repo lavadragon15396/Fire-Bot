@@ -7,7 +7,7 @@ module.exports = (client) => {
             const buttonFiles = fs.readdirSync(`./src/Buttons/${folder}`).filter(file => file.endsWith('.js'));
             for (const file of buttonFiles) {
                 const button = require(`../buttons/${folder}/${file}`)
-                client.buttons.set(button.data.name, button)
+                client.buttons.set(button.data.name, button);
             }
         }
     }
