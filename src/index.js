@@ -3,6 +3,8 @@
 //TODO make work on multiple servers
 //TODO port all commands from old bot
 //TODO make music bot capabilities 
+//* accent colour    F85056
+//* accent colour 2  F89050
 
 const { Client, Intents, Collection } = require('discord.js');
 const fs = require('fs');
