@@ -24,6 +24,6 @@ module.exports = {
                     .setStyle("PRIMARY"),
             );
 
-            await interaction.reply({ ephemeral: true, content: `Click Buttons To Get Colours!`, components: [row]});
+            await interaction.reply({ content: `Click Buttons To Get Colours!`, components: [row]});
     },
 };
