@@ -9,11 +9,10 @@ module.exports = {
         .addUserOption(option => option.setName('target').setDescription('The User To Ping')),
     async execute(interaction) {
         const member = interaction.options.getMember('target');
-        if (interaction.user.id == '651472179057262630') {
-            var spam = true
+        if (interaction.user.id === '651472179057262630') {
             var i = 0
             await interaction.reply(`<@${member.id}>`)
-            while (1 < 10) {
+            while (i < 10) {
                 await interaction.followUp(`<@${member.id}>`)
                 i++
             }
