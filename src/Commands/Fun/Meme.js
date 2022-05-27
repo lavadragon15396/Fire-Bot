@@ -8,7 +8,9 @@ module.exports = {
         .setDescription('Replies With A Random Meme!'),
     async execute(interaction) {
         start().then(memeEmbed => {
-            interaction.reply({embeds: [memeEmbed]})
+            interaction.reply({
+                embeds: [memeEmbed]
+            })
         });
     },
 };

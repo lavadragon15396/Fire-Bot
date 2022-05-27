@@ -8,7 +8,7 @@ module.exports = {
     async execute(interaction) {
         const infoEmbed = new MessageEmbed()
             .setTitle('Server Info')
-            .setColor('FF8B00')
+            .setColor('F85056')
             .setTimestamp()
             .addFields({
                 name: 'Server Name',

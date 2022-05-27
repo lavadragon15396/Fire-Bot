@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('avatar')
         .setDescription('Replies With The Specified User\'s Avatar')
-        .addUserOption(option => option.setName('target').setDescription('The User To See The Avatar Of')),
+        .addUserOption(option => option.setName('target').setDescription('The User To See The Avatar Of').setRequired(true)),
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         const noMemberMentioned = new MessageEmbed()

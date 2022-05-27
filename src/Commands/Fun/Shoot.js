@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('shoot')
         .setDescription('Shoot Someone With Text')
-        .addUserOption(option => option.setName('target').setDescription('The User To Shoot')),
+        .addUserOption(option => option.setName('target').setDescription('The User To Shoot').setRequired(true)),
     async execute(interaction) {
         const member = interaction.options.getMember('target');
         const noMemberMentioned = new MessageEmbed()
