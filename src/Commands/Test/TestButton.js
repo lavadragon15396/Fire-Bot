@@ -15,7 +15,7 @@ module.exports = {
 
                 new MessageButton()
                     .setCustomId(`green-button`)
-                    .setLabel(`Red`)
+                    .setLabel(`Green`)
                     .setStyle("SUCCESS"),
 
                 new MessageButton()
