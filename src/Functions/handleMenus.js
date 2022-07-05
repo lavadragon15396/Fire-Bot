@@ -1,5 +1,5 @@
 const fs = require("fs");
-//
+
 module.exports = (client) => {
 	client.handleMenus = async () => {
 		const menuFolders = fs.readdirSync("./src/Menus");
