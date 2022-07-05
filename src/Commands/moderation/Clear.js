@@ -14,7 +14,6 @@ module.exports = {
             .setDescription('The Number Of Messages To Clear')
             .setRequired(true)),
     async execute(interaction) {
-        const message = await interaction.fetchReply();
         const noUserPerms = new MessageEmbed()
             .setTitle('You do not have the permission to do this')
             .setColor('F85056')
@@ -24,7 +23,7 @@ module.exports = {
             .setColor('F85056')
             .setTimestamp()
         const unableToDeleteTooOld = new MessageEmbed()
-            .setTitle('I was unable to clear the amount of messages given, please make sure they are less than a week old')
+            .setTitle('I was unable to clear the amount of messages given, please make sure they are less than 2 weeks old')
             .setColor('F85056')
             .setTimestamp()
 
@@ -43,11 +42,11 @@ module.exports = {
 
         try {
             await interaction.channel.bulkDelete(fetchedMessages)
-            await interaction.reply({ embeds: [deletedMessages] })
+            await interaction.reply({ embeds: [deletedMessages] });
             } catch (err) {
             console.log(err);
             await interaction.reply({ embeds: [unableToDeleteTooOld] })
-            await deletedMessages.delete(1000).catch(err => console.log(err))
+            await interaction.deleteReply(1000)
         }
     }
 }
