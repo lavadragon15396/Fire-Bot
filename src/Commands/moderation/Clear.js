@@ -27,10 +27,14 @@ module.exports = {
             .setColor('F85056')
             .setTimestamp()
 
-        if (!interaction.member.permissions.has("MANAGE_MESSAGES")) return await interaction.reply({ embeds: [noUserPerms] })
+        if (!interaction.member.permissions.has("MANAGE_MESSAGES")) return await interaction.reply({
+            embeds: [noUserPerms]
+        })
 
         const amountToDelete = interaction.options.getInteger('number');
-        if (amountToDelete < 1 || amountToDelete > 100) return await interaction.reply({ embeds: [tooBigOrSmall] })
+        if (amountToDelete < 1 || amountToDelete > 100) return await interaction.reply({
+            embeds: [tooBigOrSmall]
+        })
         const fetchedMessages = await interaction.channel.messages.fetch({
             limit: amountToDelete
         });
@@ -42,11 +46,15 @@ module.exports = {
 
         try {
             await interaction.channel.bulkDelete(fetchedMessages)
-            await interaction.reply({ embeds: [deletedMessages] });
-            } catch (err) {
-            console.log(err);
-            await interaction.reply({ embeds: [unableToDeleteTooOld] })
-            await interaction.deleteReply(1000)
+            await interaction.reply({
+                embeds: [deletedMessages]
+            });
+        } catch (err) {
+            await interaction.reply({
+                embeds: [unableToDeleteTooOld]
+            })
+            await delay(2000)
+            await interaction.deleteReply()
         }
     }
 }
