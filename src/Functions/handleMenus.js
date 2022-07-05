@@ -8,7 +8,7 @@ module.exports = (client) => {
 				.readdirSync(`./src/Menus/${folder}`)
 				.filter((file) => file.endsWith(".js"));
 			for (const file of menuFiles) {
-				const menu = require(`../menus/${folder}/${file}`);
+				const menu = require(`../Menus/${folder}/${file}`);
 				client.menus.set(menu.data.name, menu);
 			}
 		}
