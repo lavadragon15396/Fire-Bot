@@ -13,7 +13,6 @@
 <center>Fire Bot</center> -->
 <h1 align="center" ><a href="https://discord.com/api/oauth2/authorize?client_id=946121908099907634&permissions=8&scope=bot%20applications.commands">Fire Bot</h1>
 
-
 ---
 
 <h4 align="center"> Fire Bot is a simple discord bot with a few utilities as well as fun commands!</h4>
