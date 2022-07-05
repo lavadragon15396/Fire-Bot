@@ -7,7 +7,7 @@ module.exports = {
 		);
 
 		client.user.setPresence({
-			activities: [{ name: "for /help", type: "WATCHING" }],
+			activities: [{ name: `${process.env.status}`, type: `${process.env.statusType}` }],
 		});
 	},
 };
