@@ -51,12 +51,12 @@ module.exports = {
 			await interaction.reply({
 				embeds: [deletedMessages],
 			});
+			setTimeout(() => interaction.deleteReply(), 2000);
 		} catch (err) {
 			await interaction.reply({
 				embeds: [unableToDeleteTooOld],
 			});
-			await delay(2000);
-			await interaction.deleteReply();
+			setTimeout(() => interaction.deleteReply(), 2000);
 		}
 	},
 };
