@@ -3,10 +3,6 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
 	name: "messageCreate",
 	async execute(message, client) {
-		if (message.author.id === "769226983078494248") {
-			message.react("💩");
-			message.reply("poop is funny");
-		}
 		const badWords = [
 			"nigger",
 			"nigga",
@@ -55,8 +51,3 @@ module.exports = {
 // } else {
 //     console.log(`No match using "${message.content}"`);
 // }
-
-//   annoy
-// if (message.author.id === '815263316820754444') {
-//     message.react('💩');
-// };
