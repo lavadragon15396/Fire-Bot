@@ -6,8 +6,6 @@ const {
 	MessageEmbed,
 } = require("discord.js");
 
-const assetPath = "../../../Assets"
-
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName("help")
@@ -56,7 +54,7 @@ module.exports = {
 		const helpEmbed = new MessageEmbed()
 			.setTitle("FireBot Help")
 			.setThumbnail(
-				`${assetPath}/Icons/icon glow.png`
+				"https://raw.githubusercontent.com/lavadragon15396/Fire-Bot/master/Assets/Icons/icon%20glow.png"
 			)
 			.addField(
 				"\u200B",
