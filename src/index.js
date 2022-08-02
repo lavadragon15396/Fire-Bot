@@ -1,3 +1,13 @@
+//TODO Ban and Kick Commands
+//TODO port all commands from old bot
+//* Links:
+//	https://dashboard.heroku.com/apps/tads-fire-bot
+//	https://github.com/lavadaragon15396/Fire-Bot
+//  https://discord.com/developers/applications/946121908099907634/information
+//* accent colour    F85056
+//* accent colour 2  F89050
+//* escape symbol    
+
 const { Client, Intents, Collection } = require("discord.js");
 const fs = require("fs");
 const client = new Client({ intents: 32767 });
