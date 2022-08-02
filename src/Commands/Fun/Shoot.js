@@ -13,18 +13,11 @@ module.exports = {
 		),
 	async execute(interaction) {
 		const member = interaction.options.getMember("target");
-		const noMemberMentioned = new MessageEmbed()
-			.setTitle(`Please mention a member to shoot`)
-			.setColor("f85056")
-			.setTimestamp();
 		const shootEmbed = new MessageEmbed()
 			.setTitle(`**▄︻̷̿┻̿═━一**         ᐨ     ${member.displayName}`)
 			.setColor("f85056")
 			.setTimestamp();
-		if (!member) {
-			await interaction.reply({ embeds: [noMemberMentioned] });
-		} else {
-			await interaction.reply({ embeds: [shootEmbed] });
-		}
+
+		await interaction.reply({ embeds: [shootEmbed] });
 	},
 };
