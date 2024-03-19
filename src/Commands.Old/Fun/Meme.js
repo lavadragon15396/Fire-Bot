@@ -16,7 +16,7 @@ module.exports = {
 };
 
 async function start() {
-	return fetch(`https://meme-api.herokuapp.com/gimme`)
+	return fetch(`https://meme-api.com/gimme`)
 		.then((res) => res.json())
 		.then((json) => {
 			const memeEmbed = new MessageEmbed()
