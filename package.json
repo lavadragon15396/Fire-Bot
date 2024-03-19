@@ -1,0 +1,27 @@
+{
+  "name": "fire-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot I made for fun",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavadaragon15396/Fire-Bot.git"
+  },
+  "author": "Tad Dufort",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavadaragon15396/Fire-Bot/issues"
+  },
+  "homepage": "https://github.com/lavadaragon15396/Fire-Bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^2.2.0",
+    "chalk": "^4.1.2",
+    "discord-api-types": "^0.37.75",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
