@@ -10,7 +10,7 @@ const handleCommands = require("./functions/handlers/handleCommands");
 
 const client = new Client({ intents: GatewayIntentBits.Guilds });
 client.commands = new Collection();
-client.commandsArray = [];
+client.commandArray = [];
 client.colour1 = "#F85056";
 client.colour2 = "#F89050";
 
